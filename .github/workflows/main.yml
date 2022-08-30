@@ -1,0 +1,14 @@
+name : HinataBot
+
+on:
+    push:
+      branches: [ master ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: Running Bot
+         run: |
+           git clone https://github.com/Yuri-Neko/AyGemuy && sudo apt install ffmpeg imagemagick -y && cd HinataBot && npm install && npm start
