@@ -2,7 +2,7 @@ name : HinataBot
 
 on:
     push:
-      branches: [ master ]
+      branches: [ main ]
     
 jobs:
   build:
